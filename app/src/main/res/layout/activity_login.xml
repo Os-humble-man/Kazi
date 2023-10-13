@@ -8,15 +8,31 @@
     android:paddingLeft="25dp"
     android:paddingTop="25dp"
     android:paddingRight="25dp"
+    android:paddingBottom="25dp"
     tools:context=".Login">
 
     <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:textColor="#219ebc"
+        android:text="Kazi"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        android:textStyle="bold"
+
+        />
+
+
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:layout_marginBottom="10dp"
-        android:text="Login"
+        android:text="@string/login_title"
         android:textSize="34sp"
         android:textStyle="bold"
 
@@ -26,7 +42,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
-        android:text="Veullez vous connecter "
+        android:text="@string/sign_action"
         android:textColor="#6c757d"
         android:textStyle="bold" />
 
@@ -87,19 +103,63 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
-        android:text="Se connecter avec :"
+        android:text="@string/sign_with"
         android:textAlignment="center"
         android:textColor="#6c757d"
         android:textStyle="bold" />
 
-    <GridView
-        android:id="@+id/gridView"
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+
+            >
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@mipmap/google"
+                android:padding="10dp"
+                android:contentDescription="google icone"
+                />
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@mipmap/facebook"
+                android:padding="10dp"
+                android:contentDescription="facebook icone"
+
+                />
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@mipmap/linkedin"
+                android:padding="10dp"/>
+
+        </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#6c757d"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:text="Ou"
+                android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/signup"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:numColumns="3">
-
-
-    </GridView>
+        android:padding="10dp"
+        android:text="Cree un compte"
+        android:textAlignment="center"
+        android:textColor="#219ebc"
+        android:textStyle="bold"
+        android:backgroundTint="@color/white"
+        />
 
 
 </LinearLayout>
